@@ -1,0 +1,119 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 900px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: fit-content;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card1,
+.card2,
+.card3 {
+    width: 300px;
+
+}
+
+img {
+    padding: 20px;
+}
+
+span {
+    display: block;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: hsl(0, 0%, 95%);
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+p {
+    max-width: 200px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 30px auto;
+    line-height: 25px;
+}
+
+.button {
+    margin: 100px 0px 45px 50px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.button.one {
+    color: hsl(31, 77%, 52%);
+}
+
+.button.two {
+    color: hsl(184, 100%, 22%);
+}
+
+.button.three {
+    color: hsl(179, 100%, 13%);
+}
+
+.button.one,
+.button.two,
+.button.three {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.button.one:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.button.two:hover {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.button.three:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:376px) {
+    .parent {
+        width: 90%;
+        display: flex;
+        margin: 100px auto 50px;
+        flex-direction: column;
+    }
+    .card1,
+    .card2,
+    .card3 {
+        width: 100%;
+
+    }
+}
